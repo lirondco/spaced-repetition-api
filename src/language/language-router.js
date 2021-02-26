@@ -80,8 +80,8 @@ languageRouter
       req.language,
       words
     );
-    console.log(words, wordList)
-    if (req.body.guess === wordList.head.value.translation) {
+    const userAnswer = req.body.guess
+    if (userAnswer.toLowerCase().split(' ').join('') === wordList.head.value.translation) {
       wordList.head.value.correct_count++; 
       wordList.head.value.memory_value =
         (wordList.head.value.memory_value * 2 >= wordList.listNodes().length

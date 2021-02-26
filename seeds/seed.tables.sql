@@ -30,7 +30,7 @@ VALUES
   (7, 1, 'אישה', 'woman', 8),
   (8, 1, 'גבר', 'man', 9),
   (9, 1, 'מצלמה', 'camera', 10),
-  (10, 1, 'טלוויזיה', 'tv', null);
+  (10, 1, 'טלוויזיה', 'television', null);
 
 UPDATE "language" SET head = 1 WHERE id = 1;
 
