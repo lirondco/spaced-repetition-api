@@ -3,7 +3,7 @@ const pg = require('pg');
 pg.defaults.ssl = process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false;
 
 module.exports = {
-  "migrationDirectory": "migrations",
+  "migrationsDirectory": "migrations",
   "driver": "pg",
   "host": process.env.MIGRATION_DATABASE_HOST,
   "port": process.env.MIGRATION_DATABASE_PORT,
