@@ -81,7 +81,8 @@ languageRouter
       words
     );
     const userAnswer = req.body.guess
-    if (userAnswer.toLowerCase().split(' ').join('') === wordList.head.value.translation) {
+    const correctAnswer = wordList.head.value.translation
+    if (userAnswer.toLowerCase().split(' ').join('') === correctAnswer.toLowerCase().split(' ').join('')) {
       wordList.head.value.correct_count++; 
       wordList.head.value.memory_value =
         (wordList.head.value.memory_value * 2 >= wordList.listNodes().length
