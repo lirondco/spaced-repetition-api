@@ -1,5 +1,8 @@
 # Spaced repetition API!
 
+## Live Client APP: https://spaced-repetition-ggfun9pzl-lirondco.vercel.app/
+## Client Repo: https://github.com/lirondco/spaced-repetition/
+
 ## API Documentation
 
 BaseURL: 'https://thawing-plains-80929.herokuapp.com/api'
