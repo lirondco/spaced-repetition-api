@@ -1,5 +1,39 @@
 # Spaced repetition API!
 
+## Live Client APP: https://spaced-repetition-ggfun9pzl-lirondco.vercel.app/
+## Client Repo: https://github.com/lirondco/spaced-repetition/
+
+## API Documentation
+
+BaseURL: 'https://thawing-plains-80929.herokuapp.com/api'
+
+### BaseURL/auth
+
+#### /token
+
+POST - Enables the user to submit login credentials.
+Required keys in request body: { username, password }
+
+PUT - refreshes the auth token
+
+### BaseURL/language
+
+GET - returns the user's language data
+
+#### /head
+
+GET - returns the next word and its related data
+
+#### /guess
+
+POST - enables the user to submit an answer to the word returned in GET /head
+Required key in request body: { guess }
+
+### BaseURL/user
+
+POST - enables the user to submit new user information
+Required keys in request body: { name, username, password }
+
 ## Local dev setup
 
 If using user `dunder-mifflin`:
